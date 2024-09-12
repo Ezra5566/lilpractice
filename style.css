@@ -13,7 +13,7 @@ html {
 body {
   --pri-color: #000000;
   /* text */
-  --sec-color: #E1DFDD;
+  --sec-color: #e1dfdd;
   /* background */
   --ter-color: #787878;
   /* secondary text */
@@ -28,7 +28,9 @@ body {
   color: var(--pri-color);
   margin-bottom: 2.5rem;
   /* add some space at the end of the view */
-  transition: color 0.5s ease, background-color 0.5s ease;
+  transition:
+    color 0.5s ease,
+    background-color 0.5s ease;
 }
 
 .easter-pointer {
@@ -45,14 +47,14 @@ a {
   color: unset;
 }
 
-a>span,
+a > span,
 #email {
   position: relative;
   /* mandatory for having the right ::before size */
 }
 
-a>span::before {
-  content: '';
+a > span::before {
+  content: "";
   position: absolute;
   width: 0;
   bottom: -2px;
@@ -61,9 +63,9 @@ a>span::before {
   transition: all 0.3s;
 }
 
-.text-footer>a>span::before,
-nav a>span::before {
-  content: '';
+.text-footer > a > span::before,
+nav a > span::before {
+  content: "";
   position: absolute;
   width: 0;
   bottom: 0;
@@ -73,7 +75,7 @@ nav a>span::before {
 }
 
 #email::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   bottom: 0;
@@ -82,7 +84,7 @@ nav a>span::before {
   transition: all 0.3s;
 }
 
-a.hovered>span::before,
+a.hovered > span::before,
 #email.hovered::before {
   border-bottom: 2px solid var(--pri-color);
   width: 100%;
@@ -127,7 +129,7 @@ a.hovered>span::before,
 }
 
 #noise::before {
-  content: '';
+  content: "";
   opacity: 0.4;
   position: absolute;
   top: 0;
@@ -142,90 +144,88 @@ a.hovered>span::before,
 }
 
 @-webkit-keyframes noise {
-
   0%,
   100% {
-    background-position: 0 0
+    background-position: 0 0;
   }
 
   10% {
-    background-position: -5% -10%
+    background-position: -5% -10%;
   }
 
   20% {
-    background-position: -15% 5%
+    background-position: -15% 5%;
   }
 
   30% {
-    background-position: 7% -25%
+    background-position: 7% -25%;
   }
 
   40% {
-    background-position: 20% 25%
+    background-position: 20% 25%;
   }
 
   50% {
-    background-position: -25% 10%
+    background-position: -25% 10%;
   }
 
   60% {
-    background-position: 15% 5%
+    background-position: 15% 5%;
   }
 
   70% {
-    background-position: 0 15%
+    background-position: 0 15%;
   }
 
   80% {
-    background-position: 25% 35%
+    background-position: 25% 35%;
   }
 
   90% {
-    background-position: -10% 10%
+    background-position: -10% 10%;
   }
 }
 
 @keyframes noise {
-
   0%,
   100% {
-    background-position: 0 0
+    background-position: 0 0;
   }
 
   10% {
-    background-position: -5% -10%
+    background-position: -5% -10%;
   }
 
   20% {
-    background-position: -15% 5%
+    background-position: -15% 5%;
   }
 
   30% {
-    background-position: 7% -25%
+    background-position: 7% -25%;
   }
 
   40% {
-    background-position: 20% 25%
+    background-position: 20% 25%;
   }
 
   50% {
-    background-position: -25% 10%
+    background-position: -25% 10%;
   }
 
   60% {
-    background-position: 15% 5%
+    background-position: 15% 5%;
   }
 
   70% {
-    background-position: 0 15%
+    background-position: 0 15%;
   }
 
   80% {
-    background-position: 25% 35%
+    background-position: 25% 35%;
   }
 
   90% {
-    background-position: -10% 10%
+    background-position: -10% 10%;
   }
 }
 
@@ -234,7 +234,7 @@ a.hovered>span::before,
   z-index: -1;
 }
 
-#bck>.grid-item {
+#bck > .grid-item {
   border: 1px dashed var(--grid-color);
   min-height: 100dvh;
 }
@@ -284,7 +284,7 @@ a.hovered>span::before,
   grid-column: 8/10;
 }
 
-#nav>.grid-container>nav {
+#nav > .grid-container > nav {
   grid-column: 13/10;
   /* get the text to the max right */
   text-align: right;
@@ -301,7 +301,7 @@ a.hovered>span::before,
   font-size: 9rem;
 }
 
-#title>h5 {
+#title > h5 {
   grid-column: 3/-1;
   margin-top: 8rem;
 }
@@ -331,11 +331,11 @@ a.hovered>span::before,
 }
 
 /* featured works */
-#project>.title {
+#project > .title {
   margin-bottom: 10rem;
 }
 
-#project>.title>p {
+#project > .title > p {
   grid-column: 3/3;
   /* force text at the end */
   height: 100%;
@@ -344,7 +344,7 @@ a.hovered>span::before,
   justify-content: end;
 }
 
-#project>.title>h2 {
+#project > .title > h2 {
   grid-column: 6/-1;
   /* force text at the end */
   height: 100%;
@@ -353,31 +353,31 @@ a.hovered>span::before,
   justify-content: end;
 }
 
-#project>.work {
+#project > .work {
   margin-top: 10rem;
 }
 
-#project>.work>p,
-#project>.work>ul {
+#project > .work > p,
+#project > .work > ul {
   margin-top: 5rem;
 }
 
-#project>.work>h3,
-#project>.work>p,
-#project>.work>ul {
+#project > .work > h3,
+#project > .work > p,
+#project > .work > ul {
   grid-column: 6/-1;
 }
 
-#project>.work>ul>li {
+#project > .work > ul > li {
   /*list-style: disc inside;*/
 }
 
 /* about me */
-#about>.title {
+#about > .title {
   margin-bottom: 10rem;
 }
 
-#about>.title>p {
+#about > .title > p {
   grid-column: 3/3;
   /* force text at the end */
   height: 100%;
@@ -386,7 +386,7 @@ a.hovered>span::before,
   justify-content: end;
 }
 
-#about>.title>h2 {
+#about > .title > h2 {
   grid-column: 6/-1;
   /* force text at the end */
   height: 100%;
@@ -395,7 +395,7 @@ a.hovered>span::before,
   justify-content: end;
 }
 
-#about>.content>.pic {
+#about > .content > .pic {
   grid-column: 7/12;
   grid-row: 1/5;
   /* allow al the p to go beside the img */
@@ -403,7 +403,7 @@ a.hovered>span::before,
   /* place the legend under the img */
 }
 
-#about>.content>.pic img {
+#about > .content > .pic img {
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
@@ -415,18 +415,18 @@ a.hovered>span::before,
   display: none;
 }
 
-#about>.content>p,
-#about>.content>ul {
+#about > .content > p,
+#about > .content > ul {
   grid-column: 6/1;
   text-align: right;
 }
 
 /* side project */
-#sideProject>.title {
+#sideProject > .title {
   margin-bottom: 10rem;
 }
 
-#sideProject>.title>p {
+#sideProject > .title > p {
   grid-column: 3/3;
   /* force text at the end */
   height: 100%;
@@ -435,7 +435,7 @@ a.hovered>span::before,
   justify-content: end;
 }
 
-#sideProject>.title>h2 {
+#sideProject > .title > h2 {
   grid-column: 6/-1;
   /* force text at the end */
   height: 100%;
@@ -465,11 +465,11 @@ a.hovered>span::before,
 }
 
 /* let's talk */
-#contact>.title {
+#contact > .title {
   margin-bottom: 10rem;
 }
 
-#contact>.title>p {
+#contact > .title > p {
   grid-column: 3/3;
   /* force text at the end */
   height: 100%;
@@ -478,7 +478,7 @@ a.hovered>span::before,
   justify-content: end;
 }
 
-#contact>.title>h2 {
+#contact > .title > h2 {
   grid-column: 6/-1;
   /* force text at the end */
   height: 100%;
@@ -515,14 +515,14 @@ a.hovered>span::before,
 }
 
 #tooltip::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   border-radius: 50%;
   width: 100%;
   height: 100%;
-  background-image: url('broken-noise.png');
+  background-image: url("broken-noise.png");
   opacity: 0.2;
 }
 
@@ -531,7 +531,7 @@ a.hovered>span::before,
   clip-path: polygon(0 0, 100% 0, 100% 110%, 0% 110%);
 }
 
-#footer>.grid-container {
+#footer > .grid-container {
   height: 100%;
 }
 
@@ -542,8 +542,8 @@ a.hovered>span::before,
   transform: translateY(100%);
 }
 
-#grid-footer>div {
-  width: calc(100%/3);
+#grid-footer > div {
+  width: calc(100% / 3);
   clip-path: polygon(0 0, 100% 0, 100% 110%, 0% 110%);
   text-align: center;
   display: flex;
@@ -556,7 +556,7 @@ a.hovered>span::before,
   transform: translateY(85px);
 }
 
-#grid-footer>div:nth-child(1) {
+#grid-footer > div:nth-child(1) {
   border-right: 2px solid var(--pri-color);
   border-left: 2px solid var(--pri-color);
   border-top: 2px solid var(--pri-color);
@@ -564,12 +564,12 @@ a.hovered>span::before,
   border-bottom-left-radius: 8px;
 }
 
-#grid-footer>div:nth-child(2) {
+#grid-footer > div:nth-child(2) {
   border-top: 2px solid var(--pri-color);
   border-bottom: 2px solid var(--pri-color);
 }
 
-#grid-footer>div:nth-child(3) {
+#grid-footer > div:nth-child(3) {
   border-right: 2px solid var(--pri-color);
   border-left: 2px solid var(--pri-color);
   border-top: 2px solid var(--pri-color);
@@ -637,7 +637,6 @@ a.hovered>span::before,
   font-size: inherit;
 }
 
-
 /* TODO */
 
 .emoji-container {
@@ -647,7 +646,7 @@ a.hovered>span::before,
 }
 
 .underlined.pm {
-  --pm-dur: '0%';
+  --pm-dur: "0%";
 }
 
 .underlined.pm::before {
@@ -663,7 +662,7 @@ a.hovered>span::before,
 }
 
 .underlined.dev {
-  --dev-dur: '0%';
+  --dev-dur: "0%";
 }
 
 .underlined.dev::before {
@@ -679,7 +678,7 @@ a.hovered>span::before,
 }
 
 .underlined {
-  --und-dur: '0%';
+  --und-dur: "0%";
 }
 
 .underlined::before {
